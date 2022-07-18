@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>出題網站</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- 自行定義 -->
+  <script src="js/create/creater.js"></script>
+  <script src="js/create/true_false.js"></script> <!-- 是非題  -->
+  <script src="js/create/multipleChose.js"></script> <!-- 選擇題 -->
+  <script src="js/create/fillIn.js"></script> <!-- 填充題 -->
+  <script src="js/create/painter.js"></script> <!-- 畫圖題 -->
+  <script src="js/create/imgFillin.js"></script> <!-- 圖片填充題 -->
+  <script src="js/output/output.js"></script>  <!-- 考題輸出 -->
+  <script src="js/output/htmltextFooter.js"></script>
+  <script src="js/output/htmltextHead.js"></script>
+  <script src="js/output/blockmaker.js"></script>
+</head>
+<script>
+  
+</script>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm back-green navbar-dark fixed-top">
+    <a class="navbar-brand" href="#"><img src="img/massage.png" class="logo"></a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" onclick="addYesNo();"><b>是非題</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="addchoose();"><b>選擇題</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="addFilling();"><b>填充題</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="addImage();"><b>畫圖題</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="addImgFilling();"><b>圖片填充題</b></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="jumbotron text-center hero-image">
+    <div class="hero-text">
+      <h2 style="font-size:50px">出題網站</h2>
+      <p>練習題</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!--<div class="container">
+       <div class='row'>
+        <div class="col-sm-10">
+          <input type="file" id="files" name="file" />
+        </div>
+        <div class="col-sm-2">
+          <div class="btn-group">
+            <button type="button" class="btn btn-success" onclick="startRead();">開始匯入</button>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div id="progress_bar">
+          <div class="percent">0%</div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="row">
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary" onclick="addYesNo();">是非題</button>
+        <button type="button" class="btn btn-primary" onclick="addchoose();">選擇題</button>
+        <button type="button" class="btn btn-primary" onclick="addFilling();">填充題</button>
+        <button type="button" class="btn btn-primary" onclick="addImage();">畫圖題</button>
+        <button type="button" class="btn btn-primary" onclick="addImgFilling();">圖片填充題</button>
+      </div>
+    </div> -->
+
+
+
+    <!--新增題目區塊-->
+    <div class="container" id='question'>
+
+    </div>
+
+    <div class="container">
+      <button type="button" class="btn back-orange text-white btn-block p-2 my-5" onclick="output();">完成並輸出</button>
+    </div>
+
+  </div>
+
+
+</body>
+<script src="js/loadData.js"></script>
+
+</html>

@@ -1,0 +1,87 @@
+body {
+    font-family: Microsoft JhengHei, DFKai-sb, Arial, '新細明體', sans-serif;
+}
+
+/* 背景顏色使用 */
+.back-white {background-color: #f0f4f9;} /* 白色 */
+.back-beige, body {background-color: #fefae0;} /* 米色 */
+.back-green {background-color: #283618;} /* 綠色 */
+.back-light-green {background-color: #606c38;} /* 淺綠色 */
+.back-orange {background-color: #bc6c25;} /* 橘色 */
+.back-light-orange {background-color: #dda15e;} /* 淺綠色 */
+
+/* 文字顏色使用 */
+.text-white {color: #f0f4f9;} /* 白色 */
+.text-black {color: #111;} /* 黑色 */
+.text-blue {color: #4e83b5;} /* 藍色 */
+.text-gray {color: #818181;} /* 灰色 */
+
+.logo {
+  height: 40px;
+}
+
+.hero-image{
+  background-image: linear-gradient(rgba(40, 54, 24, 0.7), rgba(40, 54, 24, 0.7)), url("../img/hero.jpg");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#progress_bar {
+    margin: 10px 0;
+    padding: 3px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-size: 14px;
+    clear: both;
+    opacity: 0;
+    width: 100%;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+  }
+  #progress_bar.loading {
+    opacity: 1.0;
+  }
+  #progress_bar .percent {
+    background-color: #99ccff;
+    border-radius: 10px;
+    height: auto;
+    width: 0;
+  }
+
+.file {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 4px 10px;
+  overflow: hidden;
+  text-decoration: none;
+  text-indent: 0;
+  line-height: 20px;
+  border-radius: 5px;
+  color: #000;
+  background:#ccc; 
+  /* 一些不支援背景漸變的瀏覽器 */  
+  background:-moz-linear-gradient(top, #fff, #ccc);  
+  background:-webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#ccc));  
+  background:-o-linear-gradient(top, #fff, #ccc); 
+}
+.file input {    
+    position: absolute;    
+    font-size: 50px;    
+    right: 0;    
+    top: 0;    
+    opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
